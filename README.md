@@ -66,8 +66,8 @@ dostoevsky@prototype:~$ vmw --config "path=C:\Program Files (x86)\VMware\VMware 
 ```
 
 ```bash
-dostoevsky@prototype:~$ vmw --add-group HomeLab "C:\Users\dostoevsky\Documents\Virtual Machines"
- - Added group 'HomeLab' with config: C:\Users\dostoevsky\Documents\Virtual Machines
+dostoevsky@prototype:~$ vmw --add-group HomeLab "path=C:\Users\dostoevsky\Documents\Virtual Machines"
+ - Added group 'HomeLab' with config: path=C:\Users\dostoevsky\Documents\Virtual Machines
 ```
 
 ```bash
