@@ -17,12 +17,19 @@ Also note that you have to provide a windows path to the folder associated with 
 
 Lastly, it currently only works with VMWare style VMs ie: C:\Path\to\folder\VMName\VMName.vmx - this is because it's passing the vmx file to the vmplayer.exe on the command line.
 
+#### Git it.
 ```bash
 git clone https://github.com/dostoevskylabs/vmw.git && cd vmw && chmod +x vmw.sh
 ```
 
+#### Access it with just the command name
 ```bash
-dostoevsky@prototype:~$ ./vmw.sh --help
+sudo ln -s ~/git/vmw/vmw.sh /usr/bin/vmw
+```
+
+#### Usage
+```bash
+dostoevsky@prototype:~$ vmw --help
   Commands
 -=-=-=-=-=-=-
  --config 'path=C:/path/to/vmplayer.exe'
@@ -54,17 +61,17 @@ dostoevsky@prototype:~$ ./vmw.sh --help
 ```
 
 ```bash
-dostoevsky@prototype:~$ ./vmw.sh --config "path=C:\Program Files (x86)\VMware\VMware Player\vmplayer.exe"
+dostoevsky@prototype:~$ vmw --config "path=C:\Program Files (x86)\VMware\VMware Player\vmplayer.exe"
  - Saved config: path=C:\Program Files (x86)\VMware\VMware Player\vmplayer.exe to ~/.vmw/config
 ```
 
 ```bash
-dostoevsky@prototype:~$ ./vmw.sh --add-group HomeLab "C:\Users\dostoevsky\Documents\Virtual Machines"
+dostoevsky@prototype:~$ vmw --add-group HomeLab "C:\Users\dostoevsky\Documents\Virtual Machines"
  - Added group 'HomeLab' with config: C:\Users\dostoevsky\Documents\Virtual Machines
 ```
 
 ```bash
-dostoevsky@prototype:~$ ./vmw.sh --list-groups
+dostoevsky@prototype:~$ vmw --list-groups
  Groups
 -=-=-=-=-
  HomeLab        (C:\Users\dostoevsky\Documents\Virtual Machines)
@@ -72,7 +79,7 @@ dostoevsky@prototype:~$ ./vmw.sh --list-groups
 ```
 
 ```bash
-dostoevsky@prototype:~$ ./vmw.sh --list HomeLab
+dostoevsky@prototype:~$ vmw --list HomeLab
  HomeLab
 -=-=-=-=-
  - Kali
@@ -80,7 +87,7 @@ dostoevsky@prototype:~$ ./vmw.sh --list HomeLab
 ```
 
 ```bash
-dostoevsky@prototype:~$ ./vmw.sh --list-all
+dostoevsky@prototype:~$ vmw --list-all
  Group: HomeLab
 -=-=-=-=-=-=-=-
  Kali
@@ -93,12 +100,12 @@ dostoevsky@prototype:~$ ./vmw.sh --list-all
 ```
 
 ```bash
-dostoevsky@prototype:~$ ./vmw.sh --spawn HomeLab/Kali
+dostoevsky@prototype:~$ vmw --spawn HomeLab/Kali
 - Spawning Kali
 ```
 
 ```bash
-dostoevsky@prototype:~$ ./vmw.sh --spawn-group HomeLab
+dostoevsky@prototype:~$ vmw --spawn-group HomeLab
  - Spawning Kali
  - Spawning Ubuntu
 ```
