@@ -7,23 +7,31 @@ dostoevsky@prototype:~$ ./vmw.sh --help
   Commands
 -=-=-=-=-=-=-
  --config       'path=C:/path/to/vmplayer.exe'
-	define your path to the vmplayer.exe
+        define your path to the vmplayer.exe
+
  --add-group    [group name] 'path=C:/path/to/virtual/machines'
-	add a group to vmw pointing it to a folder containing machines for this group
+        add a group to vmw pointing it to a folder containing machines for this group
+
  --delete-group [group name]
-	delete a group ( this will not delete the machines in windows )
+        delete a group ( this will not delete the machines in windows )
+
  --list-groups
-	list all groups
- --list 		[group name]
-	list a specific group's machines
+        list all groups
+
+ --list [group name]
+        list a specific group's machines
+
  --list-all
-	list all machines organized by group
+        list all machines organized by group
+
  --spawn        [group name]/[VM Name]
-	spawn machine from a group
+        spawn machine from a group
+
  --spawn-group  [group name]
-	spawn an entire group
+        spawn an entire group
+
  --help
-	print this menu
+        print this menu :-)
 ```
 
 ```bash
