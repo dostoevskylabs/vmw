@@ -182,7 +182,7 @@ case $1 in
 
                 echo "- Spawning $vm"
 
-                "$path2" "$vmpath/$vm/$vm.vmx" 2>/dev/null
+                "$path2" "$vmpath/$vm/$vm.vmx" 2>/dev/null &
                 exit 1
         ;;
         -sg|--spawn-group)
@@ -217,7 +217,7 @@ case $1 in
                         else
                                 echo " - Spawning $vm"
                                 echo ""
-                                "$path2" "$vmpath/$vm/$vm.vmx" 2>/dev/null
+                                "$path2" "$vmpath/$vm/$vm.vmx" 2>/dev/null &
                         fi
                 done
                 exit 1
