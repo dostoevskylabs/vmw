@@ -1,16 +1,16 @@
 # vmw
 command line tool for grouping VMWare Workstation vms and spawning them on windows via the WSL
 
-## why?
+#### why?
 Because I play vidya games and the free version of vmware workstation doesn't allow you to create groups, spawn multiple vm's at once, etc.
 
-## why wsl?
+#### why wsl?
 cause cancer.
 
-## but no seriously, why?
+#### but no seriously, why?
 don't judge me.
 
-#### How-to
+## How-to
 Please note that you have to provide it a windows path to the executable for vmplayer.exe before spawning vms.
 
 Also note that you have to provide a windows path to the folder associated with each group, ie: homelab, network, vulnhub, etc
