@@ -133,7 +133,7 @@ case $1 in
         -la|--list-all)
                 for a in $(ls ~/.vmw/groups);
                 do
-                        echo " Group: $a"
+                        echo " $a"
                         echo "-=-=-=-=-=-=-=-"
                         vmpath=$(cat ~/.vmw/groups/$a/config | cut -d= -f2);
                         vmpath2=$(echo "/mnt/${vmpath,}" | sed -e 's/://' | sed -e 's/\\/\//g');
