@@ -11,6 +11,12 @@ cause cancer.
 don't judge me.
 
 #### How-to
+Please note that you have to provide it a windows path to the executable for vmplayer.exe before spawning vms.
+
+Also note that you have to provide a windows path to the folder associated with each group, ie: homelab, network, vulnhub, etc
+
+Lastly, it currently only works with VMWare style VMs ie: C:\Path\to\folder\VMName\VMName.vmx - this is because it's passing the vmx file to the vmplayer.exe on the command line.
+
 ```bash
 git clone https://github.com/dostoevskylabs/vmw.git && cd vmw && chmod +x vmw.sh
 ```
