@@ -2,7 +2,7 @@
 command line tool for grouping VMWare Workstation vms and spawning them on windows via the WSL
 
 #### why?
-Because I play vidya games and the free version of vmware workstation doesn't allow you to create groups, spawn multiple vm's at once, etc.
+Because I play vidya games and thus am stuck on windows a lot and the free version of vmware workstation doesn't allow you to create groups, spawn multiple vm's at once, etc.
 
 #### why wsl?
 cause cancer.
