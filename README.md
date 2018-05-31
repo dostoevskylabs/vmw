@@ -25,10 +25,10 @@ git clone https://github.com/dostoevskylabs/vmw.git && cd vmw && chmod +x vmw.sh
 dostoevsky@prototype:~$ ./vmw.sh --help
   Commands
 -=-=-=-=-=-=-
- --config       'path=C:/path/to/vmplayer.exe'
+ --config 'path=C:/path/to/vmplayer.exe'
         define your path to the vmplayer.exe
 
- --add-group    [group name] 'path=C:/path/to/virtual/machines'
+ --add-group [group name] 'path=C:/path/to/virtual/machines'
         add a group to vmw pointing it to a folder containing machines for this group
 
  --delete-group [group name]
@@ -43,10 +43,10 @@ dostoevsky@prototype:~$ ./vmw.sh --help
  --list-all
         list all machines organized by group
 
- --spawn        [group name]/[VM Name]
+ --spawn [group name]/[VM Name]
         spawn machine from a group
 
- --spawn-group  [group name]
+ --spawn-group [group name]
         spawn an entire group
 
  --help
