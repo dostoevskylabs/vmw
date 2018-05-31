@@ -1,16 +1,16 @@
 # vmw
 command line tool for grouping VMWare Workstation vms and spawning them on windows via the WSL
 
-# why?
+## why?
 Because I play vidya games and the free version of vmware workstation doesn't allow you to create groups, spawn multiple vm's at once, etc.
 
-# why wsl?
+## why wsl?
 cause cancer.
 
-# but no seriously, why?
+## but no seriously, why?
 don't judge me.
 
-## How-to
+#### How-to
 ```bash
 git clone https://github.com/dostoevskylabs/vmw.git && cd vmw && chmod +x vmw.sh
 ```
