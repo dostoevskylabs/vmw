@@ -1,7 +1,7 @@
 #!/bin/bash
 # derpherp
 #aaae
-#test
+#testaa
 if [ ! -d ~/.vmw ]; then
         mkdir ~/.vmw
 fi
