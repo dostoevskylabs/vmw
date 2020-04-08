@@ -1,6 +1,6 @@
 #!/bin/bash
 # derpherp
-#aaa
+#aaae
 #test
 if [ ! -d ~/.vmw ]; then
         mkdir ~/.vmw
